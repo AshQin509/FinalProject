@@ -1,0 +1,305 @@
+#root {
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 28px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav-spacer {
+  width: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-links button,
+.primary-button,
+.outline-button,
+.small-button,
+.delete-button {
+  border: 2px solid #111111;
+  background-color: #dddddd;
+  color: #000000;
+  cursor: pointer;
+}
+
+.nav-links button {
+  padding: 10px 18px;
+  background-color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links button.active {
+  background-color: #dddddd;
+}
+
+.page-container {
+  width: 85%;
+  max-width: 1050px;
+  margin: 35px auto;
+}
+
+.dashboard-page {
+  width: 78%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 58px 20px 35px;
+}
+
+.dashboard-content {
+  width: 100%;
+}
+
+.dashboard-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 26px;
+}
+
+.dashboard-content h1 {
+  margin: 0;
+  font-size: 56px;
+  line-height: 1;
+}
+
+.dashboard-top-row .primary-button {
+  padding: 8px 14px;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+.today-list {
+  margin: 0;
+  padding-left: 42px;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.today-list li {
+  margin-bottom: 14px;
+}
+
+.task-line,
+.task-description {
+  display: block;
+}
+
+.task-description {
+  margin-top: 2px;
+  font-size: 24px;
+}
+
+.recovery-card {
+  width: 100%;
+  max-width: none;
+  margin: 42px 0 0;
+  padding: 32px 36px;
+  text-align: center;
+  background-color: #dddddd;
+}
+
+.recovery-card h3 {
+  margin: 0 0 4px;
+  font-size: 28px;
+}
+
+.recovery-card p {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.recovery-card strong {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.outline-button {
+  padding: 4px 10px;
+  font-size: 24px;
+  background-color: #eeeeee;
+}
+
+.primary-button {
+  padding: 8px 12px;
+  font-size: 18px;
+}
+
+.form-page {
+  display: flex;
+  justify-content: center;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #dddddd;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-card label {
+  margin-top: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-card .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+}
+
+.form-card input,
+.form-card textarea,
+.form-card select {
+  padding: 8px;
+  border: 1px solid #777777;
+}
+
+.form-card textarea {
+  min-height: 80px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.task-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  padding: 18px;
+  border: 1px solid #dddddd;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  margin-top: 12px;
+  background-color: #dddddd;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #333333;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.small-button,
+.delete-button {
+  padding: 7px 10px;
+  border-width: 1px;
+}
+
+.task-steps {
+  padding-left: 20px;
+  border-left: 1px solid #dddddd;
+}
+
+.empty-message,
+.progress-summary,
+.progress-box,
+.recovery-page,
+.recovery-task-info {
+  padding: 18px;
+  border: 1px solid #dddddd;
+}
+
+.progress-summary {
+  display: grid;
+  gap: 12px;
+}
+
+.progress-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.progress-box {
+  text-align: center;
+  background-color: #dddddd;
+}
+
+.progress-box span {
+  display: block;
+  margin-top: 22px;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.recovery-page {
+  max-width: 650px;
+  margin: auto;
+}
+
+.reason-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.reason-option {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+}
+
+.reason-option input {
+  margin-right: 10px;
+}
+
+.plan-section {
+  margin: 25px 0;
+}
+
+@media (max-width: 800px) {
+  .dashboard-page {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .dashboard-actions .primary-button,
+  .today-list {
+    font-size: 28px;
+  }
+
+  .dashboard-content h1 {
+    font-size: 44px;
+  }
+
+  .task-card,
+  .progress-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .task-steps {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid #dddddd;
+  }
+}
